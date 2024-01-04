@@ -1,0 +1,156 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* CSS GENERAL */
+
+body{font-family: 'roboto', sans-serif;}
+
+:root{scroll-behavior: smooth;}
+
+a{text-decoration: none;}
+
+h1{font-size: 3.5em;}
+h2{font-size: 2.7em;}
+h3{font-size: 2em;}
+p{font-size: 1.25em;}
+
+button{
+    color: #000;
+    background-color: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+}
+
+/* HEADER SECCION BANNER */
+
+.banner{
+    background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+    background-blend-mode: multiply,multiply;
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.banner h1{
+    color: #DCD9D4;
+}
+
+.banner nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.menu{
+    color: #000;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+/* HEADER SECCION PORTADA */
+
+.portada{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,.6),
+        rgba(0,0,0,.6)
+    )
+    ,url("./imagenes/what-is-a-web-developer.avif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.portada h2{
+    color: #DCD9D4;
+    margin-bottom: 20px;
+    font-size: 2.5EM;
+}
+
+.boton button{
+    height: 30px;
+    width: 90px;
+    border-radius: 40%;
+    background-color: #ace0f9;
+    cursor: pointer;
+}
+
+/* MAIN SECCION ¿QUIEN SOY? */
+
+.quiensoy{
+    text-align: center;
+    padding: 200px 20px;
+}
+
+.quiensoy h2{
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.quiensoy p{
+    font-size: 1em;
+}
+
+/* MAIN SECCION PROYECTOS */
+
+.proyectos{
+    background-color: #fff1eb;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 20PX;
+}
+
+.box{
+    border-radius: 15px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 20px;
+    padding: 20PX;
+    color: #FFF;
+}
+
+.box:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,.5),
+        rgba(0,0,0,.5)
+    )
+    ,url("./imagenes/imagen\ 1.jpeg");
+}
+
+.box:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,.5),
+        rgba(0,0,0,.5)
+    )
+    ,url("./imagenes/imagen\ 2.jpeg");
+}
+
+.box:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,.5),
+        rgba(0,0,0,.5)
+    )
+    ,url("./imagenes/imagen\ 3.jpeg");
+}
+
+.contenedores p{
+    display: none;
+}
